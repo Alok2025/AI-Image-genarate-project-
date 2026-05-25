@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --bg-color: #0f172a;
+    --secondary-bg: #1e293b;
+    --card-bg: #111827;
+
+    --primary-color: #7c3aed;
+    --primary-hover: #6d28d9;
+
+    --accent-color: #06b6d4;
+    --accent-secondary: #ec4899;
+
+    --text-color: #f8fafc;
+    --text-secondary: #94a3b8;
+
+    --border-color: #334155;
+
+    --success-color: #22c55e;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
+
+    --shadow-color: rgba(124, 58, 237, 0.35);
+
+    --gradient-primary: linear-gradient(135deg, #7c3aed, #06b6d4);
+    --gradient-secondary: linear-gradient(135deg, #ec4899, #8b5cf6);
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #7c3aed, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.search {
+    background: var(--border-color);
+    color: var(--text-secondary);
+    border: var(--border-color);
+}
+
+.search-btn {
+    background: var(--gradient-secondary);
+    color: black;
+}
+
+.image-container {
+    width: 60%;
+    min-height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.intro-container {
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    gap: 40px;
+}
+
+.intro-left {
+    width: 50%;
+}
+
+.intro-left h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.intro-left span {
+    background: linear-gradient(90deg, #7c3aed, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-left p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+.intro-btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: var(--gradient-primary);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.intro-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-right img {
+    width: 90%;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+}
